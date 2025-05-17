@@ -1,4 +1,4 @@
-const RouteCard = ({ route }) => {
+export default function RouteCard({ route }) {
   return (
     <div className="route-card">
       <div className="route-number">{route.number}</div>
@@ -10,6 +10,4 @@ const RouteCard = ({ route }) => {
       </div>
     </div>
   );
-};
-
-export default RouteCard;
+}

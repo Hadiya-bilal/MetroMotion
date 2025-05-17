@@ -1,6 +1,5 @@
 import { useState, useContext } from 'react';
-import { AppContext } from '../../context/AppContext.jsx';
-
+import { AppContext } from '../context/AppContext.jsx';
 const Payments = () => {
   const { user, setUser } = useContext(AppContext);
   const [amount, setAmount] = useState(10);

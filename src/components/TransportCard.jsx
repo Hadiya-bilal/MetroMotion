@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AppContext } from '../context/AppContext.jsx';
+import AppContext from '../context/AppContext.jsx'; // Now using default import
 
 const TransportCard = () => {
   const { user } = useContext(AppContext);
@@ -10,10 +10,6 @@ const TransportCard = () => {
       <div className="card-details">
         <p>Card Number: {user.transportCard.number}</p>
         <p>Balance: €{user.transportCard.balance.toFixed(2)}</p>
-      </div>
-      <div className="card-actions">
-        <button>Top Up Card</button>
-        <button>Monthly Pass</button>
       </div>
     </div>
   );

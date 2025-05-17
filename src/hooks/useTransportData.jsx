@@ -9,7 +9,7 @@ const useTransportData = () => {
   const fetchRoutes = useCallback(async () => {
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_TRANSPORT_API_BASE_URL}/routes`
+        `${import.meta.env.VITE_TRANSPORT_API_BASE_URL}/routes`
       );
       setRoutes(response.data);
     } catch (err) {

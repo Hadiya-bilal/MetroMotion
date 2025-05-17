@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { AppContext } from '../../context/AppContext.jsx';
-import RouteCard from '../../components/RouteCard.jsx';
+import { AppContext } from '../context/AppContext.jsx';
+import RouteCard from '../components/RouteCard.jsx';
 
 const FavoriteRoutes = () => {
   const { user } = useContext(AppContext);

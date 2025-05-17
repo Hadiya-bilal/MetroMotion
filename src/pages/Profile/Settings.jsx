@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
-import { AppContext } from '../../context/AppContext.jsx';
+import { AppContext } from '../context/AppContext.jsx';
+
 import ErrorMessage from '../../components/ErrorMessage.jsx';
 
 const Settings = () => {

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { GoogleMap, LoadScript, Autocomplete } from '@react-google-maps/api';
 import RouteCard from '../components/RouteCard.jsx';
 import useTransportData from '../hooks/useTransportData.jsx';
@@ -61,7 +61,7 @@ const Home = () => {
         <button className="search-btn">Search Ride</button>
       </div>
       
-      <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
+      <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           center={center}
